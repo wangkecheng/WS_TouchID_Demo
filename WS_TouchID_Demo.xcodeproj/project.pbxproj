@@ -15,6 +15,7 @@
 		20F5A07B1D9A05E0001B3FFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F5A0791D9A05E0001B3FFF /* LaunchScreen.storyboard */; };
 		20F5A0861D9A05E0001B3FFF /* WS_TouchID_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5A0851D9A05E0001B3FFF /* WS_TouchID_DemoTests.m */; };
 		20F5A0911D9A05E0001B3FFF /* WS_TouchID_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5A0901D9A05E0001B3FFF /* WS_TouchID_DemoUITests.m */; };
+		20F5A0A01D9A1176001B3FFF /* SuccessVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F5A09F1D9A1176001B3FFF /* SuccessVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		20F5A08C1D9A05E0001B3FFF /* WS_TouchID_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WS_TouchID_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F5A0901D9A05E0001B3FFF /* WS_TouchID_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WS_TouchID_DemoUITests.m; sourceTree = "<group>"; };
 		20F5A0921D9A05E0001B3FFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20F5A09E1D9A1176001B3FFF /* SuccessVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuccessVC.h; sourceTree = "<group>"; };
+		20F5A09F1D9A1176001B3FFF /* SuccessVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuccessVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				20F5A06F1D9A05E0001B3FFF /* AppDelegate.m */,
 				20F5A0711D9A05E0001B3FFF /* ViewController.h */,
 				20F5A0721D9A05E0001B3FFF /* ViewController.m */,
+				20F5A09E1D9A1176001B3FFF /* SuccessVC.h */,
+				20F5A09F1D9A1176001B3FFF /* SuccessVC.m */,
 				20F5A0741D9A05E0001B3FFF /* Main.storyboard */,
 				20F5A0771D9A05E0001B3FFF /* Assets.xcassets */,
 				20F5A0791D9A05E0001B3FFF /* LaunchScreen.storyboard */,
@@ -207,7 +212,7 @@
 				TargetAttributes = {
 					20F5A0671D9A05E0001B3FFF = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 2WJJ6Z5DGD;
+						DevelopmentTeam = U7BGYBJ9D3;
 						ProvisioningStyle = Automatic;
 					};
 					20F5A0801D9A05E0001B3FFF = {
@@ -276,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F5A0A01D9A1176001B3FFF /* SuccessVC.m in Sources */,
 				20F5A0731D9A05E0001B3FFF /* ViewController.m in Sources */,
 				20F5A0701D9A05E0001B3FFF /* AppDelegate.m in Sources */,
 				20F5A06D1D9A05E0001B3FFF /* main.m in Sources */,
@@ -425,7 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2WJJ6Z5DGD;
+				DEVELOPMENT_TEAM = U7BGYBJ9D3;
 				INFOPLIST_FILE = WS_TouchID_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "warron.WS-TouchID-Demo";
@@ -437,7 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2WJJ6Z5DGD;
+				DEVELOPMENT_TEAM = U7BGYBJ9D3;
 				INFOPLIST_FILE = WS_TouchID_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "warron.WS-TouchID-Demo";

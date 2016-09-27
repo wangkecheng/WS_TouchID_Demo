@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +18,71 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85c-aA-deR">
+                                <color key="backgroundColor" red="0.67869149647004989" green="0.52478545998153248" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pAL-cm-MTe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="开启指纹解锁">
+                                    <color key="titleColor" red="1" green="0.84513392783406782" blue="0.065765727948580155" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UtA-D2-e4s"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="85c-aA-deR" secondAttribute="trailing" id="8C3-Sj-dsV"/>
+                            <constraint firstItem="85c-aA-deR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KW6-ju-JyS"/>
+                            <constraint firstItem="85c-aA-deR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="txy-6a-zQC"/>
+                            <constraint firstItem="85c-aA-deR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="udz-m7-0jn"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-242" y="-95"/>
+        </scene>
+        <!--SuccessVC-->
+        <scene sceneID="TEf-jd-Mgg">
+            <objects>
+                <viewController storyboardIdentifier="SuccessVC" id="etS-sR-VB2" customClass="SuccessVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bKn-nc-vjO"/>
+                        <viewControllerLayoutGuide type="bottom" id="U2Y-k5-Feq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tg7-WE-hdf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2Z-ed-KsC">
+                                <color key="backgroundColor" red="1" green="0.84513392779999996" blue="0.065765727950000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZKe-pm-9hd"/>
+                                </constraints>
+                                <state key="normal" title="解锁成功 返回">
+                                    <color key="titleColor" red="0.50895600001300745" green="1" blue="0.50907699312096077" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBack:" destination="etS-sR-VB2" eventType="touchUpInside" id="eqt-JU-tai"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="f2Z-ed-KsC" firstAttribute="centerY" secondItem="tg7-WE-hdf" secondAttribute="centerY" id="KtA-tf-Ujp"/>
+                            <constraint firstItem="f2Z-ed-KsC" firstAttribute="leading" secondItem="tg7-WE-hdf" secondAttribute="leadingMargin" id="RNh-ca-AjJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f2Z-ed-KsC" secondAttribute="trailing" id="dWy-1V-p7B"/>
+                            <constraint firstItem="f2Z-ed-KsC" firstAttribute="centerX" secondItem="tg7-WE-hdf" secondAttribute="centerX" id="rHr-aY-WvK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HXp-0x-PA7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="412" y="-102"/>
         </scene>
     </scenes>
 </document>
